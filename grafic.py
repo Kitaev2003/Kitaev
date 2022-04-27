@@ -5,6 +5,7 @@ with open("settings.txt", "r") as settings:
     tmp = [float(i) for i in settings.read().split("\n")]
 
 data_array = np.loadtxt("data.txt", dtype=float)
+data_array = data_array *3.3/255
 
 period = tmp[0]
 
